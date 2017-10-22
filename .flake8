@@ -1,0 +1,6 @@
+[flake8]
+exclude =
+    venv,
+    __pycache__
+application-import-names = ttools
+import-order-style = edited

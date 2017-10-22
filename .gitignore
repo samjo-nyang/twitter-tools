@@ -1,0 +1,6 @@
+__pycache__
+*.pyc
+venv/
+
+ttools/local_settings.py
+ttools/storage/
