@@ -5,12 +5,12 @@ def main():
     client = get_client()
     client.SetCache(None)
     while True:
-        tweets = client.GetUserTimeline(count=200)
+        tweets = client.GetFavorites(count=200)
         if not tweets:
             break
 
         for tweet in tweets:
             try:
-                client.DestroyStatus(tweet.id)
+                client.DestroyFavorite(status_id=tweet.id)
             except:
                 pass

@@ -1,6 +1,6 @@
 import click
 
-from ttools import bnu, remover
+from ttools import bnu, heart, remover
 
 
 @click.command()
@@ -8,6 +8,7 @@ from ttools import bnu, remover
 def cli(mode):
     mode_map = {
         'bnu': bnu.main,
+        'heart': heart.main,
         'remover': remover.main,
     }
     if mode not in mode_map:

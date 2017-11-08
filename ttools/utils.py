@@ -16,6 +16,7 @@ def get_client():
         consumer_secret=CONSUMER_SECRET,
         access_token_key=ACCESS_TOKEN_KEY,
         access_token_secret=ACCESS_TOKEN_SECRET,
+        timeout=5,
     )
 
 
